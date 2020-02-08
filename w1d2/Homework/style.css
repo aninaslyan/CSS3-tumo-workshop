@@ -1,0 +1,94 @@
+body{/*
+	background: #f1c747;
+	color:#fff;*/
+
+    background-image: url("yellow.png");
+}
+#container { 
+    width:450px;
+    height:500px;
+    margin: 0 auto;
+    position: relative;
+    top:140px;
+
+    position: relative; 
+    border-top: 6px solid rgba(255,255,255,0.9); 
+}
+#container:before, #container:after { 
+    content: ""; 
+    position: absolute; 
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), to(transparent)); 
+    background-image: -webkit-linear-gradient(rgba(255,255,255,1), transparent); 
+    background-image: -moz-linear-gradient(rgba(255,255,255,1), transparent); 
+    background-image: -o-linear-gradient(rgba(255,255,255,1), transparent); 
+    background-image: linear-gradient(rgba(255,255,255,1), transparent); 
+    top: -3px; 
+    bottom: -3px; 
+    width: 6px;
+    z-index: 1; 
+}
+#container:after { 
+    right: 0; 
+}
+
+.itallic1, .itallic2, .bold1, .bold2{
+    width: 565px;
+    padding: 45px 0 30px 25px;
+	color: black;
+}
+.itallic1 em{
+    font: 3.65em Pacifico;
+    position: absolute;
+    top: -12%;
+    left: 17%;
+    z-index: -1;
+}
+.itallic2 em{
+    font: 3.65em Pacifico;
+    position: absolute;
+    top: 45%;
+    left: 22%;
+}
+.bold1 strong, .bold2 strong, .bold3 strong{
+    text-transform: uppercase;
+    font: 936% Roboto Condensed;
+    font-weight: bold;
+}
+.bold1 strong{
+    position: absolute;
+    left: -10%;
+    top:5%;
+    color:black;
+}
+.bold2 strong{
+    font: 550% Roboto Condensed;
+    color: white;
+    position: absolute;
+    top: 30%;
+    font-weight: bold;
+    left: 15%;
+}
+.bold3 strong{
+    font: 500% Roboto Condensed;
+    color: white;
+    position: absolute;
+    top: 85%;
+    font-weight: bold;
+    word-spacing: 58px;
+}
+.thin{
+    text-transform: uppercase;
+    font: 120px Rajdhani;
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 17%;
+}
+
+/* http://www.tangledindesign.com/codepen/fonts/ */
+/* https://www.transparenttextures.com/ */
+/* gagooganesyan.com/w1d2 */
+
+@keyframes borders{
+	/*0%{border-right: 5px solid rgba(255,255,255,1);border-left: 5px solid rgba(255,255,255,1)}*/
+}
