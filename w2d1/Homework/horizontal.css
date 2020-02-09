@@ -1,0 +1,187 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,500');
+.accordion{
+	width: 830px;
+	overflow: hidden;
+	margin: 10px auto;
+	color: #474747;
+	background-color: #414141;
+	padding: 10px;
+}
+h1{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+/* Styling the accordion */
+.accordion section:target{
+	background: white;
+	padding: 10px;
+}
+.accordion section:target:hover{
+	background: white;
+}
+.accordion section:target h2{
+	width: 100%;
+}
+.accordion section:target h2 a{
+	color:#333;
+	padding: 0;
+}
+.accordion section:target p{
+	display: block;
+}
+.accordion section h2 a{
+	padding: 8px 10px;
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	color:#eee;
+	text-decoration: none;
+}
+.accordion section{
+	float: left;
+	overflow: hidden;
+	color: #333;
+	cursor: pointer;
+	background: #333;
+	margin: 3px;
+}
+.accordion section:hover{
+	background-color: #444;
+}
+.accordion section p{
+	display: none;
+}
+.accordion section:after{
+	position: relative;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+}
+.accordion section:nth-child(1):after{
+	content: '1';
+}
+.accordion section:nth-child(2):after{
+	content: '2';
+}
+.accordion section:nth-child(3):after{
+	content: '3';
+}
+.accordion section:nth-child(4):after{
+	content: '4';
+}
+.accordion section:nth-child(5):after{
+	content: '5';
+}
+
+/*Horizontal*/
+.horizontal section{
+	width: 5%;
+	height: 250px;
+	transition: width 0.2s ease-out;
+}
+.horizontal section:after{
+	top: 140px;
+	left: 15px;
+}
+
+/*rotation*/
+.horizontal section h2{
+	transform: rotate(90deg);
+	width: 240px;
+	position: relative;
+	left: -100px;
+	top: 85px;
+}
+.horizontal :target{
+	width: 73%;
+	height: 230px;
+}
+.horizontal :target h2{
+	top: 0px;
+	left: 0px;
+	transform: rotate(0deg);
+}
+
+@media only screen and (max-width: 1024px){
+	h1{
+		/*font-family: 'Montserrat', sans-serif;*/
+	}
+	.accordion{
+		width: 97%;
+	}
+	.horizontal section{
+	    width: 99%;
+	    height: 72px;
+	    transition: height 0.2s ease-in-out;
+	}
+	.horizontal section h2{
+        transform: rotate(0deg);
+	    left: 0;
+	    top: -9%;
+	    font-family: 'Roboto';
+	}
+	.accordion section h2 a{
+	    font-size: 25px;
+	}
+	.horizontal section:after{
+		left: 95%;
+	}
+	.horizontal :target{
+	    width: 97.5%;
+	}
+	.horizontal section:after{
+    	top: -15px;
+	}
+}
+@media only screen and (max-width: 820px){
+	.horizontal :target {
+    	width: 95.5%;
+	}
+	.horizontal section{
+		width: 24%;
+	}
+}
+@media only screen and (max-width: 650px){
+	.accordion{
+		width: 97%;
+	}
+	.horizontal section{
+	    width: 99%;
+	}
+	.accordion section h2 a:before{
+	    margin-right: 80%;
+    	margin-left: 10%;
+	}
+	.accordion section:target h2 a:before{
+		margin-right: 5%;
+    	margin-left: 0;
+	}
+
+	.accordion section:nth-child(1) h2 a:before{
+	    content: '\f15c';
+	    font-family: fontawesome;
+	}
+	.accordion section:nth-child(2) h2 a:before{
+	    content: '\f022';
+	    font-family: fontawesome;
+	}
+	.accordion section:nth-child(3) h2 a:before{
+	    content: '\f09e';
+	    font-family: fontawesome;
+	}
+	.accordion section:nth-child(4) h2 a:before{
+	    content: '\f07c';
+	    font-family: fontawesome;
+	}
+	.accordion section:nth-child(5) h2 a:before{
+	    content: '\f1ac';
+	    font-family: fontawesome;
+	}
+}
+@media only screen and (max-width: 375px){
+	.horizontal section h2{
+		width: 40%;
+	}
+}

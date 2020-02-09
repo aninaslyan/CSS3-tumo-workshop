@@ -1,0 +1,288 @@
+body{
+	background-color: #333;
+}
+.wrapper{
+	width:680px;
+}
+.wrapper-long{
+	width: 1020px;
+}
+.wrapper, .wrapper-long{
+	margin: 15px auto;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: arial, sans-serif;
+	color: #666;
+	background-color: white;
+}
+.view{
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+	border: 10px solid white;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	cursor: default;
+	background: #fff url('img/bgimg.jpg') no-repeat center center;
+}
+.view .mask{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.view img{
+	display: block;
+	position: relative;
+}
+.view h2{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	padding: 10px;
+	background: rgba(0,0,0,0.8);
+	margin-bottom: 20px 0 0 0;
+}
+.view p{
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 12px;
+	position: relative;
+	color: white;
+	padding: 10px 20px 20px;
+	text-align: center;
+}
+
+.view a.info{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	box-shadow: 0 0 5px black;
+}
+
+/*Gallery one Begining*/
+.view-first img{
+	transition: all 0.2s linear;
+}
+.view-first .mask{
+	opacity: 0;
+	background-color: rgba(175,173,170,0.7);
+	transition: all 0.4s ease-in-out;
+}
+.view-first h2{
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first p{
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Adding the effect*/
+.view-first:hover img{
+	transform: scale(1.1);
+}
+.view-first:hover .mask{
+	opacity: 1;
+}
+.view-first:hover h2, .view-first:hover p, .view-first:hover a.info{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.view-first:hover p{
+	transition-delay: 0.1s;
+}
+.view-first:hover a.info{
+	transition-delay: 0.2s;
+}
+
+/*Gallery Two*/
+.view-secon img{
+	transition: all 0.2s ease-in;
+}
+
+.view-second .mask{
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transform: translate(460px, -100px) rotate(180deg);
+	transition: all 0.2s 0.4s ease-in-out;
+
+}
+
+.view-second h2{
+	transform: translateY(-100px);
+	transition: all 0.2s ease-in-out;
+}
+
+.view-second p{
+	transform: translateX(300px) rotate(90deg);
+	transition: all 0.2s ease-in-out;
+}
+
+.view-second a.info{
+	transform: translateY(-200px);
+	transition: all 0.2s ease-in-out;
+}
+
+/* adding effects for Gallery two*/
+.view-second:hover .mask{
+	opacity: 1;
+	transition-delay: 0s;
+	transform: translate(0px, 0px); 
+}
+.view-second:hover h2{
+	transform: translateY(0); 
+	transition-delay: 0.5s;
+}
+.view-second:hover p{
+	transform: translateX(0) rotate(0deg); 
+	transition-delay: 0.4s;
+}
+.view-second:hover a.info{
+	transform: translateY(0); 
+	transition-delay: 0.3s;
+}
+
+/*Gallery number three*/
+.view-third img{
+	transition: all 0.4s ease-in-out 0.2s;
+	opacity: 1;
+}
+.view-third .mask{
+	background-color: rgba(0,0,0,0.8);
+	opacity: 0;
+	transform: scale(0) rotate(-180deg);
+	transition: all 0.4s ease-in;
+	border-radius: 0px;
+}
+
+.view-third h2{
+	opacity: 0;
+	border-radius:1px solid rgba(0,0,0,0.3);
+	background-color: transparent;
+	margin: 20px 40px 0 40px;
+	transition: all 0.5s ease-in-out;
+}
+/*Adding the effects*/
+.view-third:hover .mask{
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+	transition-delay: 0.2s;
+}
+.view-third:hover img{
+	transform: scale(0);
+	opacity: 0;
+	transition-delay: 0;
+}
+.view-third:hover h2, .view-third:hover p, .view-third:hover a.info{
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+/*Galery number four*/
+
+.view-fourth img{
+	transition: all 0.3s ease-in-out;
+}
+.view-fourth .mask{
+	opacity: 0;
+	background-color: rgba(146, 96, 91, 0.3);
+	transition: all 0.4s ease-in-out;
+	transform: translateX(-300px);
+}
+.view-fourth h2{
+	background: rgba(255, 255, 255, 0.5);
+	color: #000;
+	box-shadow: 0 1px 3px rgba(159, 141, 140, 0.5);
+}
+.view-fourth p{
+	opacity: 0;
+	color: #333;
+	transition: all 0.2s linear;
+}
+/*Adding effects */
+.view-fourth:hover .mask{
+	opacity: 1;
+	transform: translateX(0);
+}
+.view-fourth:hover p{
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+
+.view-fourth:hover img{
+	transform: translateX(300px);
+	transition-delay: 0.1s;
+}
+
+/* Gallery five */
+
+.view-fifth img{
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+
+.view-fifth .mask{
+	background-color: rgba(225, 231, 179, 0.3);
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.view-fifth h2{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	background: transparent;
+	margin: 20px 40px 0 40px;
+	transform: scale(0);
+	color: #333;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.view-fifth p{
+	color: #333;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.5s linear;
+}
+
+.view-fifth a.info{
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.5s linear;
+}
+
+/*adding effects*/
+
+.view-fifth:hover img{
+	opacity: 0;
+	transform: scale(2);
+}
+
+.view-fifth:hover .mask{
+	opacity: 1;
+}
+
+.view-fifth:hover h2, 
+.view-fifth:hover p, 
+.view-fifth:hover a.info{
+	opacity: 1;
+	transform: scale(1);
+}

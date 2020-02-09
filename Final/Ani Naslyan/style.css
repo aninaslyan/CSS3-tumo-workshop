@@ -1,0 +1,610 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Pangolin');*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body{
+    background-color: #d8d8d8;
+}
+.page-wrapper section.intro header h1{
+    font-family: Roboto,arial,sans-serif;
+    /*
+    font-size: 46px;
+    letter-spacing: 0px;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1.2em;
+    margin: 5% 40%;*/
+
+
+    font-size: 68px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1.2em;
+    margin: 15% 33%;
+}
+
+#css-zen-garden .page-wrapper{
+    background-color: #f5f5f5;
+    box-shadow: 10px 10px 5px #888888;
+    margin: 4% 5%;
+}
+.page-wrapper section.intro header h1:hover{
+    color: #444;
+    cursor: pointer;
+}
+
+.page-wrapper section.intro header h1:before{
+    font-family: FontAwesome;
+    content: '\f13c';
+    position: absolute;
+    top: 17%;
+    font-size: 138px;
+    left: 47%;
+}
+
+.page-wrapper section.intro header h2{
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Gotham SSm,sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    line-height: 1em;
+    padding: 2em 4.5em;
+    text-align: center;
+    /*transition: opacity .1s ease-out;*/
+
+    border: 5px solid #1c1c1c;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+}
+
+/*Images and hovers*/
+.intro header:after{
+	content: url('Presentation/Shoghak/DSC_4765.jpg');
+    cursor: pointer;
+    margin: 5%;
+}
+
+.intro header:hover:after/*, .zen-intro header h2.intro h2:before*/{
+    content: url('Presentation/Shoghak/DSC_4765_hover.jpg');
+}
+
+.intro h2:after{
+    content: url('Presentation/Shoghak/DSC_4812.jpg');
+    position: absolute;
+
+    top: 336%;
+    left: 60%;
+}
+.intro h2:hover:after/*, .zen-intro header h2.intro h2:before*/{
+    content: url('Presentation/Shoghak/DSC_4812_hover.jpg');
+}
+
+
+.intro h2:before{
+    content: url('Presentation/Shoghak/DSC_4758.jpg');
+
+    position: absolute;
+    top: 1503%;
+    left: -278%;
+}
+.intro h2:hover:before/*, .zen-intro header h2.intro h2:before*/{
+    content: url('Presentation/Shoghak/DSC_4758_hover.jpg');
+}
+
+section .summary:before{
+    content: url('Presentation/Group1/1 (10).png');
+}
+
+.intro div.summary{
+    margin-top: 43%;
+}
+
+.summary p{
+    position: absolute;
+}
+.summary p:nth-child(1){
+    top: 180%;
+    font-family: arial;
+    font-weight: 700;
+    font-size: 30px;
+    width: 80%;
+    left: 10%;
+    color: white;
+    text-align: right;
+    background-color: #1c1c1c;
+    padding: 5px;
+    border-radius: 5px;
+}
+.summary p:nth-child(2){
+    top: 263%;
+    left: 63%;
+    font-family: Roboto;
+    font-size: 38px;
+    width: 30%;
+    line-height: 95px;
+    font-weight: 900;
+}
+
+.intro header:before{
+    content: url('Presentation/Shoghak/IMG_7954.jpg');
+    cursor: pointer;
+    position: absolute;
+    top: 128%;
+    left: 51.5%;
+}
+.intro header:hover:before/*, .zen-intro header h2.intro h2:before*/{
+    content: url('Presentation/Shoghak/IMG_7954_hover.jpg');
+}
+
+
+.summary p abbr{
+/*    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Gotham SSm,sans-serif;
+    font-size: 15px;
+    letter-spacing: .08em;
+    line-height: 1em;
+    padding: 1.5em 2.5em;
+    text-align: center;*/
+
+    font-size: 33px;
+    cursor: pointer;
+}
+.summary:nth-child(2) a{
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Gotham SSm,sans-serif;
+    font-size: 15px;
+    letter-spacing: .08em;
+    line-height: 1em;
+    padding: 1.5em 2.5em;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+}
+.summary:nth-child(2) a:nth-child(1){
+    top: 182%;
+    left: -155%;
+}
+.summary:nth-child(2) a:nth-child(2){
+    top: 175%;
+    left: -111%;
+}
+
+.summary:nth-child(2) a:nth-child(1):hover, .summary:nth-child(2) a:nth-child(2):hover{
+    background-color: #444;
+}
+
+.summary p:nth-child(2):after{
+    font-family: FontAwesome;
+    content: '\f03e';
+    position: absolute;
+    top: 120%;
+    font-size: 138px;
+    left: 29%;
+    transform: rotate(-10deg);
+}
+
+.main div a{
+    background-color: #1c1c1c;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+.preamble h3, .main .explanation h3, .participation h3, .benefits h3, .requirements h3{
+    font-family: "grecian-light-face",sans-serif;
+    text-align: center;
+    font-size: 2.65em;
+    background: url(Presentation/Branding/img-lg-horiz-border.png) repeat-x top center, url(Presentation/Branding/img-lg-horiz-border.png) repeat-x bottom left;
+    background-size: auto auto, auto auto;
+    /* background-size: 12em; */
+    padding: 0.9em 2.5em;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements{
+    width: 45%;
+    margin: 3% 0 3% 2%;
+}
+.preamble{
+    background-color: rgb(232, 216, 118);
+}
+.explanation{
+    background-color: rgb(149, 204, 149);
+}
+.participation{
+    background-color: rgb(1, 155, 159); /*rgba(224, 87, 16, 0.86)*/
+}
+.benefits{
+    background-color: rgb(216, 150, 38); /*rgb(210, 189, 159)*/ /*rgb(50, 180, 184)*/
+}
+.requirements{
+    background-color: rgb(222, 221, 190);/*rgb(116, 123, 143)*/ /*rgb(190, 191, 186)*/
+}
+
+.explanation, .benefits{
+    margin-left: 48.5%;
+}
+
+
+.explanation:before, .benefits:before{
+    left: 8%;
+}
+
+
+.preamble:before{
+    content: url('Presentation/Group1/1 (14).png');
+    position: absolute;
+    left: 49%;
+    top: 309.8%;
+}
+.explanation:before{
+    content: url('Presentation/Group4/4 (12).png');
+    position: absolute;
+    left: 8%;
+    top: 364%;
+}
+.participation:before{
+    content: url('Presentation/Group3/3 (10).png');
+    position: absolute;
+    left: 49%;
+}
+.benefits:before{
+    content: url('Presentation/Group2/Capture.png');
+    position: absolute;
+    /*left: 49%;*/
+}
+.requirements:before{
+    content: url('Presentation/Group1/1 (12).png');
+    position: absolute;
+    left: 49%;
+}
+
+div#zen-preamble p, .explanation p, .participation p, .benefits p, .requirements p{
+    font-family: "PT Sans";
+    margin: 0 3% 9.4% 4%;
+    text-indent: 15px;
+}
+
+.requirements p {
+    margin-bottom: 13%;
+}
+
+.sidebar{
+    display: none;
+}
+footer a{
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    font-family: Gotham SSm,sans-serif;
+    font-size: 15px;
+    letter-spacing: .08em;
+    line-height: 1em;
+    padding: 1.5em 2.5em;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 6%;
+}
+
+.benefits p:after{
+    content: 'We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We well past the point of needing another garden-related design. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days especially when you factor in mobile pixel-perfect layouts may not be possible across every platform. Thats okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).';
+}
+
+.preamble:hover:before, .participation:hover:before, .requirements:hover:before{
+    transform: rotate(10deg) scale(1.1);
+    cursor: pointer;
+}
+.explanation:hover:before, .benefits:hover:before{
+    transform: rotate(-10deg) scale(1.1);
+    cursor: pointer;
+}
+
+footer a:nth-child(1):before{
+    font-family: FontAwesome;
+    content: '\f13b';
+    padding-right: 8px;
+}
+footer a:nth-child(2):before{
+    font-family: FontAwesome;
+    content: '\f13c';
+    padding-right: 8px;
+}
+footer a:nth-child(3):before{
+    font-family: FontAwesome;
+    content: '\f1cc';
+    padding-right: 8px;
+}
+footer a:nth-child(4):before{
+    font-family: FontAwesome;
+    content: '\f193';
+    padding-right: 8px;
+}
+footer a:nth-child(5):before{
+    font-family: FontAwesome;
+    content: '\f09b';
+    padding-right: 8px;
+}
+
+
+
+.summary p abbr {
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.summary p abbr:hover{
+    color: #1c1c1c;
+    /* font-size: 49px; */
+    background-color: white;
+}
+
+
+.page-wrapper section.intro header h2:hover{
+    color: #1c1c1c;
+    background-color: white;
+    /* font-size: 10px; */
+    border: 5px solid #1c1c1c;
+}
+
+
+/*Media Queries*//*
+@media only screen and (max-width: 1901px){
+    .page-wrapper section.intro header h1{
+        font-size: 67px;
+    }
+    .intro h2:after{
+        top:434%;
+    }
+    .intro header:before{
+        top: 137.5%;
+    }
+    .summary p:nth-child(1) {
+        top: 198%;
+    }
+    .explanation:before{
+        top: 412%;
+    }
+    .preamble:before{
+        top: 348.8%;
+    }
+    footer a{
+        margin: 0 5%;
+    }
+    .summary p:nth-child(2){
+        top: 294%;
+    }
+}*/
+@media only screen and (max-width: 1600px){
+    .page-wrapper section.intro header h1{
+        margin: 15% 28%;
+    }
+    .page-wrapper section.intro header h1:before{
+        top: 27%;
+        left: 45%;
+    }
+    .page-wrapper section.intro header h2{
+        left: 41.5%;
+        top: 79%;
+    }
+    section .summary:before{
+        content: url('Presentation/Group1/1 (10)_1600.png');
+    }
+    footer a{
+        margin: 0 5%;
+    }
+    .intro header:after{
+        content: url('Presentation/Shoghak/DSC_4765_1600.jpg');
+
+        margin: 2%;
+    }
+    .intro header:hover:after{
+        content: url('Presentation/Shoghak/DSC_4765_1600.jpg');
+    }
+
+    .intro h2:before {
+        content: url(Presentation/Shoghak/DSC_4758_1600.jpg);
+        top: 1300%;
+        left: -232%;
+    }
+    .intro h2:hover:before {
+        content: url(Presentation/Shoghak/DSC_4758_1600.jpg);
+    }
+
+    .intro header:before {
+        content: url(Presentation/Shoghak/IMG_7954_1600.jpg);
+        top: 208%;
+        left: 51.6%;
+    }
+    .intro header:hover:before {
+        content: url(Presentation/Shoghak/IMG_7954_1600.jpg);
+    }
+
+    .intro h2:after {
+        content: url(Presentation/Shoghak/DSC_4812_1600.jpg);
+        top: 315%;
+        left: 68%;
+    }
+    .intro h2:hover:after {
+        content: url(Presentation/Shoghak/DSC_4812_1600.jpg);
+    }
+
+    .explanation:before {
+        content: url('Presentation/Group4/4 (12)_1600.png');
+    }
+    .benefits:before {
+        content: url(Presentation/Group2/Capture_1600.png);
+    }
+    .summary p:nth-child(2){
+        top: 409%;
+        z-index: 1;
+    }
+    .summary p:nth-child(1){
+        top: 188%;
+    }
+    .intro div.summary {
+        margin-top: 40.5%;
+    }
+    .explanation:before{
+        top: 597%;
+        left: 5.5%;
+    }
+    .preamble:before{
+        top: 492%;
+    }
+    .benefits:before{
+        left: 6%;
+    }
+
+}
+@media only screen and (max-width: 1300px){
+    section .summary:before {
+        content: '';
+    }
+    .intro header:before, .intro header:after, .intro h2:before{
+        transform: scale(0.8);
+    }
+    .intro h2:after{
+        content: '';
+    }
+    footer a {
+        margin: 0 4%;
+    }
+    .page-wrapper section.intro header h1{
+        margin: 19% 24%;
+    }
+    .intro div.summary, .intro header:after{
+        display: none;
+    }
+    div#zen-preamble {
+        margin-top: 30%;
+    }
+    .intro header:before, .intro header:after, .intro h2:before {
+        transform: scale(0.8);
+        position: absolute;
+        top: 90%;
+    }
+
+    .intro h2:hover:after {
+        content: ''; 
+    }
+
+    .requirements:before, .benefits:before, .participation:before, .explanation:before, .preamble:before{
+        transform: scale(0.6); 
+    }
+    .benefits:hover:before, .explanation:hover:before{
+       transform: rotate(-10deg) scale(0.6);
+    }
+    .preamble:hover:before, .participation:hover:before, .requirements:hover:before{
+       transform: rotate(10deg) scale(0.6); 
+    }
+    .preamble:before{
+        top: 185%;
+        left: 45%;
+    }
+    .explanation:before {
+        top: 309%;
+        left: 0.5%;
+    }
+    .benefits:before {
+        left: 2%;
+    }
+    .participation:before{
+        left: 45%;
+    }
+    .requirements:before{
+        left: 44%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .page-wrapper section.intro header h1 {
+        margin: 24% 17%;
+    }
+    footer a {
+        margin: 0 1.5%;
+    }
+    .intro header:before {
+        left: 10%;
+    }
+    .page-wrapper section.intro header h2 {
+        left: 38.5%;
+    }
+    .intro header:before, .intro header:after, .intro h2:before {
+        left: -187%;
+    }
+    .intro header:before {
+        left: 41%;
+    /* overflow: hidden; */
+    }
+    div#zen-preamble {
+        margin-top: 35%;
+    }
+    .preamble:before {
+        left: 35%;
+        top: 180%;
+    }
+    .explanation:before {
+        left: -4.5%;
+        top: 283%;
+    }
+    .participation:before {
+        left: 35%;
+    }
+    .benefits:before {
+        left: -5%;
+        top: 505%;
+    }
+    .requirements:before {
+        left: 35%;
+    }
+    .preamble h3, .main .explanation h3, .participation h3, .benefits h3, .requirements h3{
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 820px){
+    footer a {
+        margin: 0 0%;
+    }
+    .page-wrapper section.intro header h1 {
+        margin: 24% 19%;
+        font-size: 50px;
+    }
+    .page-wrapper section.intro header h1:before {
+        top: 20%;
+        left: 45%;
+        font-size: 75px;
+    }
+    div#zen-preamble {
+        margin-top: 63%;
+    }
+    .requirements:before, .benefits:before, .participation:before, .explanation:before, .preamble:before{
+        transform: scale(0.5); 
+    }
+}
+@media only screen and (max-width: 530px){
+
+}

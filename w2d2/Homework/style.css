@@ -1,0 +1,291 @@
+body{
+	width: 100%;
+	height: 100%;
+	background: #b3b3b3;
+	overflow: hidden;
+}
+.main_div{
+	width: 99.2%;
+	height: 455px;
+	margin: 15px auto;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: arial, sans-serif;
+	color: #666;
+	background-color: white;
+}
+.background{
+	width: 21.5%;
+	height: 200px;
+	margin: 55px 10px;
+	float: left;
+	border: 10px solid white;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	box-shadow: 2px 2px 3px 1px #e6e6e6;
+	cursor: default;
+	background: #fff url('img/60-lines.png') center center;
+}
+.background .hover_content{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.background img{
+	display: block;
+	position: relative;
+}
+.background h2{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	padding: 10px;
+	background: rgba(0,0,0,0.8);
+	margin-bottom: 20px 0 0 0;
+}
+.background p{
+    font-family: Roboto, serif;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    color: white;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+.background a.view_image{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 14px;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	box-shadow: 0 0 5px black;
+}
+
+/* Gallery */
+.content{
+    width: 100%;
+    margin: 0 auto;
+}
+.cont_div{
+    width: 99.2%;
+    margin: 5% auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.gallery {
+    /*border: 1px solid #ccc;*/
+    width: 100%;
+    height: 181%;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    flex-grow:4;
+}
+.gallery img {
+    width: 300px;
+    height: 55%;
+}
+
+/*Gallery Begining*/
+.background img{
+	transition: all 0.2s linear;
+}
+.background .hover_content{
+	opacity: 0;
+	background-color: rgba(175,173,170,0.7);
+	transition: all 0.4s ease-in-out;
+}
+.background h2{
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.background p{
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+.background a.view_image{
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Adding the effect*/
+.background:hover img{
+	transform: scale(1.1);
+}
+.background:hover .hover_content{
+	opacity: 1;
+}
+.background:hover h2, .background:hover p, .background:hover a.view_image{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.background:hover p{
+	transition-delay: 0.1s;
+}
+.background:hover a.view_image{
+	transition-delay: 0.2s;
+}
+
+@media only screen and (max-width: 1300px){
+	.cont_div{
+		width: 99%;
+	}
+	.main_div{
+		width: 99%;
+	}
+	.background{
+		width: 21.5%;
+	}
+
+	/*Adding the effects*/
+	.background:hover .hover_content{
+		opacity: 1;
+		transform: scale(1) rotate(0deg);
+		transition-delay: 0.2s;
+	}
+	.background:hover img{
+		transform: scale(0);
+		opacity: 0;
+		transition-delay: 0;
+	}
+	.background:hover h2, .background:hover p, .background:hover a.view_image{
+		opacity: 1;
+		transition-delay: 0.5s;
+	}
+
+}
+@media only screen and (max-width: 1165px){
+	.cont_div{
+		width: 98%;
+	}
+	.main_div{
+		width: 98%;
+	}
+	.background{
+		width: 20.5%;
+	}
+
+	/*Adding effects */
+	.background:hover .hover_content{
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.background:hover p{
+		opacity: 1;
+		transition-delay: 0.4s;
+	}
+
+	.background:hover img{
+		transform: translateX(300px);
+		transition-delay: 0.1s;
+	}
+}
+@media only screen and (max-width: 930px){
+	.main_div{
+		height: 605px;
+		/*overflow: scroll;*/
+	}
+	.background{
+		width: 44.5%;
+		height: 245px;
+	}
+	.gallery img{
+		width: 397px;
+	}
+	.background .hover_content{
+		height: 245px;
+	}
+	.background h2{
+		font-size: 25px;
+	}
+	.background p{
+		font-size: 20px;
+	}
+	.background a.view_image{
+		padding: 10px 17px;
+	}
+	.background{
+		margin: 1%;
+	}
+	.cont_div{
+		margin: 0 auto;
+	}
+	.main_div h1{
+		font-size: 20px;
+	}
+
+	/*Adding the effects*/
+	.background:hover .hover_content{
+		opacity: 1;
+		transition-delay: 0s;
+		transform: translate(0px, 0px); 
+	}
+	.background:hover h2{
+		transform: translateY(0); 
+		transition-delay: 0.5s;
+	}
+	.background:hover p{
+		transform: translateX(0) rotate(0deg); 
+		transition-delay: 0.4s;
+	}
+	.background:hover a.view-image{
+		transform: translateY(0); 
+		transition-delay: 0.3s;
+	}
+}
+@media only screen and (max-width: 595px){
+	.main_div{
+		overflow: scroll;
+	}
+	.background{
+		width: 93%;
+		height: 290px;
+	}
+	.gallery img{
+		width: 517px;
+	}
+	.background .hover_content{
+		height: 298px;
+	}
+	.main_div h1 {
+    	font-size: 35px;
+	}
+	.background a.view_image {
+    	padding: 20px 30px;
+	}
+	.background p {
+    	font-size: 25px;
+	}
+
+	/*Adding effects */
+	.background:hover img{
+		opacity: 0;
+		transform: scale(2);
+	}
+
+	.background:hover .hover_content{
+		opacity: 1;
+	}
+
+	.background:hover h2, 
+	.background:hover p, 
+	.background:hover a.view_image{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
