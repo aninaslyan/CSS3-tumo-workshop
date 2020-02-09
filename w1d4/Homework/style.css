@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.slider-holder{
+    width: 960px;/*800*/
+    height: 640px;/*400*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder{
+    width: 2880px;/*2400*/
+    background-color: grey;
+    height: 640px;/*400*/
+    clear: both;
+    position: relative;
+    
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slider-image-1:target ~ .button-holder .slider-change1{
+    background-color: white;
+}
+#slider-image-2:target ~ .button-holder .slider-change2{
+    background-color: white;
+}
+#slider-image-3:target ~ .button-holder .slider-change3{
+    background-color: white;
+}
+
+
+#slider-image-1:target ~ .image-holder{
+    left: 0px;
+}
+#slider-image-2:target ~ .image-holder{
+    left: -960px;/*800*/
+}
+#slider-image-3:target ~ .image-holder{
+    left: -1920px;/*1600*/
+}
+
+.button-holder{
+    position: relative;
+    top: -35px;
+}
+
+.slider-change{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #252f39;
+}
+
+.slider-image1 .p1, .slider-image2 .p2, .slider-image3 .p3{
+    font-family: 'Open Sans', 'sans-serif';
+    color:white;
+    position: absolute;
+    display: block;
+    top: 1em;
+    width: 60%;
+    font-size: 2.8em;
+
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} 
+#slider-image-1:target ~ .image-holder .slider-image1 .p1{
+    opacity: 1;
+    animation-name: anim-1;
+}
+
+#slider-image-2:target ~ .image-holder .slider-image2 .p2{
+    opacity: 1;
+    animation-name: anim-2;
+}
+
+#slider-image-3:target ~ .image-holder .slider-image3 .p3{
+    opacity: 1;
+    animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -960px; opacity: 0; }
+  8.3%,25% { left: -100px; opacity: 1; }
+  33.33%, 100% { left: 50px; opacity: 0; }
+}
+
+
+@keyframes anim-2 {
+    0%, 8.3% { left: -1960px; opacity: 0; }
+  8.3%,25% { left: 800px; opacity: 1; }
+  33.33%, 100% { left: 900px; opacity: 0; }
+}
+
+@keyframes anim-3 {
+    0%, 8.3% { left: -11960px; opacity: 0; }
+  8.3%,25% { left: 1700px; opacity: 1; }
+  33.33%, 100% { left: 1850px; opacity: 1; }
+}
+.p1, .p2, .p3{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
